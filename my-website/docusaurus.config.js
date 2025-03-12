@@ -15,7 +15,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // 设置网站的生产环境 URL
-  url: 'https://zxzsk.github.io',
+  url: 'https://linux-cmd.zxzsk.com',
   // 设置网站的基本路径（baseUrl），通常用于 GitHub Pages 部署
   // 对于 GitHub Pages 部署，通常是 '/<projectName>/'
   baseUrl: '/linux-cmd/',
