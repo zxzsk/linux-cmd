@@ -18,7 +18,7 @@ const config = {
   url: 'https://zxzsk.github.io',
   // 设置网站的基本路径（baseUrl），通常用于 GitHub Pages 部署
   // 对于 GitHub Pages 部署，通常是 '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/linux-cmd/',
 
   // GitHub Pages 部署配置
   // 如果不使用 GitHub Pages，可以忽略以下配置
