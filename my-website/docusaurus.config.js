@@ -15,18 +15,18 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // 设置网站的生产环境 URL
-  url: 'https://soul-io.github.io',
+  url: 'https://zxzsk.github.io',
   // 设置网站的基本路径（baseUrl），通常用于 GitHub Pages 部署
   // 对于 GitHub Pages 部署，通常是 '/<projectName>/'
   baseUrl: '/',
 
   // GitHub Pages 部署配置
   // 如果不使用 GitHub Pages，可以忽略以下配置
-  organizationName: 'soul-io', // 通常是 GitHub 组织或用户名
+  organizationName: 'zxzsk', // 通常是 GitHub 组织或用户名
   projectName: 'linux-cmd', // 通常是仓库名称
   trailingSlash: false,
   deploymentBranch: 'gh-pages', // 部署分支
-  
+
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
