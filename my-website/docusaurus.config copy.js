@@ -14,7 +14,7 @@ const config = {
   // 网站标语
   tagline: 'Dinosaurs are cool',
   // 网站图标
-  favicon: 'img/Shell.svg',
+  favicon: 'img/favicon.ico',
 
   // 设置网站的生产环境 URL
   url: 'https://linux-cmd.zxzsk.com',
@@ -37,8 +37,8 @@ const config = {
   // 即使你不使用国际化，也可以设置有用的元数据，如 HTML 的 lang 属性。
   // 例如，如果你的网站是中文的，可以将 "en" 替换为 "zh-Hans"。
   i18n: {
-    defaultLocale: 'zh-Hans', // 默认语言
-    locales: ['zh-Hans'], // 支持的语言列表
+    defaultLocale: 'en', // 默认语言
+    locales: ['en'], // 支持的语言列表
   },
 
   // Docusaurus 预设配置
@@ -53,7 +53,7 @@ const config = {
           // 请将此 URL 替换为你的仓库地址。
           // 如果不需要 "编辑此页面" 链接，可以移除此项。
           editUrl:
-            'https://github.com/zxzsk/linux-cmd/',
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         // 博客配置
         blog: {
@@ -65,7 +65,7 @@ const config = {
           // 请将此 URL 替换为你的仓库地址。
           // 如果不需要 "编辑此页面" 链接，可以移除此项。
           editUrl:
-            'https://github.com/zxzsk/linux-cmd/',
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           // 强制博客最佳实践的选项
           onInlineTags: 'warn', // 内联标签警告
           onInlineAuthors: 'warn', // 内联作者警告
@@ -101,7 +101,7 @@ const config = {
           },
           { to: '/blog', label: 'Blog', position: 'left' }, // 博客链接
           {
-            href: 'https://github.com/zxzsk/linux-cmd/', // 外部链接
+            href: 'https://github.com/facebook/docusaurus', // 外部链接
             label: 'GitHub', // 标签文本
             position: 'right', // 位置
           },
@@ -121,15 +121,19 @@ const config = {
             ],
           },
           {
-            title: '我的网站', // 链接组标题
+            title: 'Community', // 链接组标题
             items: [
               {
-                label: 'www.zxzsk.com', // 链接标签
-                href: 'https://www.zxzsk.com', // 外部链接
+                label: 'Stack Overflow', // 链接标签
+                href: 'https://stackoverflow.com/questions/tagged/docusaurus', // 外部链接
               },
               {
-                label: '导航', // 链接标签
-                href: 'https://nav.zxzsk.com', // 外部链接
+                label: 'Discord', // 链接标签
+                href: 'https://discordapp.com/invite/docusaurus', // 外部链接
+              },
+              {
+                label: 'X', // 链接标签
+                href: 'https://x.com/docusaurus', // 外部链接
               },
             ],
           },
@@ -142,30 +146,20 @@ const config = {
               },
               {
                 label: 'GitHub', // 链接标签
-                href: 'https://github.com/zxzsk/linux-cmd/', // 外部链接
+                href: 'https://github.com/facebook/docusaurus', // 外部链接
               },
             ],
           },
         ],
         // 页脚版权信息
-        copyright: `Copyright © ${new Date().getFullYear()} 在线知识库, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       // 代码高亮配置
       prism: {
-        theme: prismThemes.github,   // 明亮主题：github主题有额外加成
-        darkTheme: prismThemes.dracula,  // 夜间主题：dracula不错
-        additionalLanguages: ['bash', 'ini'], // 添加语法高亮额外支持的语言
+        theme: prismThemes.github, // 亮色主题
+        darkTheme: prismThemes.dracula, // 暗色主题
       },
     }),
-
-  // markdown插件支持
-  markdown: {
-    // 美人鱼
-    mermaid: true,
-    // 解析器 md | mdx | detect
-    format: 'detect',
-  },
-
 };
 
 // 导出配置
