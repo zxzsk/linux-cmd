@@ -1,5 +1,4 @@
 ---
-description: 玩转目录内容查看
 keywords:
   - Linux
   - 命令行工具

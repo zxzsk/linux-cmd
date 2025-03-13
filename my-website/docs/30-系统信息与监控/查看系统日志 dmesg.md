@@ -6,7 +6,7 @@ keywords:
     - 系统管理
 ---
 
-# Linux dmesg 命令教程：查看和管理内核消息 🖥️
+# Linux dmesg 命令：查看和管理内核消息
 
 ## 1. 简介
 

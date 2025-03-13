@@ -3,7 +3,6 @@ keywords:
   - Linux命令教程
 ---
 
-# Linux atq 命令教程：查看已排定的任务 ⏰
 
 ## 1. 简介
 

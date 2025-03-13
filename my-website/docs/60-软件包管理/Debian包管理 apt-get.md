@@ -1,11 +1,8 @@
 ---
-description: 管理和安装 Linux 软件包
 keywords:
   - Linux命令教程
-
 ---
 
-# apt-get 命令教程：管理和安装 Linux 软件包 
 
 ## 1. 简介
 

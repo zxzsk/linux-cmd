@@ -8,7 +8,7 @@ keywords:
   - RAID 配置  
 ---
 
-# Linux mdadm 使用：轻松管理 RAID 阵列 
+
 
 ## 1. mdadm 简介
 

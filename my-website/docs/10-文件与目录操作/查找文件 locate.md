@@ -6,7 +6,7 @@ keywords:
   - 文件查找
 ---
 
-# Linux locate 命令教程：快速查找文件和目录 🔍
+# Linux locate 命令：快速查找文件和目录
 
 ## 1. 简介
 

@@ -6,7 +6,7 @@ keywords:
   - 系统管理
 ---
 
-# Linux fdisk 命令：管理磁盘分区
+
 
 ## 1. 简介
 

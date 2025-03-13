@@ -2,7 +2,7 @@
 description: 删除用户组
 ---
 
-# Linux groupdel 命令：删除用户组
+
 
 ## 1. 简介
 

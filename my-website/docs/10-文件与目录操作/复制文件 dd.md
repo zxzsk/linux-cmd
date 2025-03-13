@@ -1,5 +1,4 @@
 ---
-description: 强大的文件复制与转换工具  
 keywords:
   - Linux命令行
   - 教程

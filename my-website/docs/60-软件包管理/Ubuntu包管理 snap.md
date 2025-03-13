@@ -2,7 +2,7 @@
 slug: /linux-command-packageManager-snap
 ---
 
-# Snap ：跨平台软件包管理器 
+
 
 `Snap` 是由 Canonical（Ubuntu 的开发公司）推出的一种软件包格式，旨在提供一种更加统一和便捷的方式来安装和管理 Linux 系统上的软件。Snap 具有许多优点，但也存在一些缺点。本文将介绍 Snap 的基本用法，并分析其优缺点以及为什么很多用户选择不使用 Snap。
 

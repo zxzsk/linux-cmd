@@ -1,6 +1,6 @@
 
 
-# Linux gunzip 命令：解压缩 gzip 文件
+
 
 ## 1. 简介
 

@@ -2,7 +2,7 @@
 description: 创建新用户组
 ---
 
-# Linux groupadd 命令：创建新用户组 
+
 
 ## 1. 简介
 

@@ -1,5 +1,4 @@
 ---
-
 keywords:
   - Linux命令教程
   - bc  
@@ -7,7 +6,6 @@ keywords:
   - 数学运算  
   - Linux  
   - 命令行工具  
-
 ---
 
 # Linux bc 命令：高精度计算器工具 

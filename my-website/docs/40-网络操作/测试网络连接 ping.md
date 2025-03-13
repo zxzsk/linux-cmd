@@ -2,7 +2,7 @@
 description: 网络连通性测试
 ---
 
-# Linux ping 命令教程：网络连通性测试 🏓
+
 
 ## 1. 简介
 

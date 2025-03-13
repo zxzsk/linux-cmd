@@ -3,7 +3,7 @@ slug: /linux-command-packageManager-pacman
 description: 学习如何使用 pacman 管理软件包
 ---
 
-# Linux pacman 命令：高效管理软件包 
+
 
 `pacman` 是 Arch Linux 和 Manjaro 等基于 Arch 的发行版使用的包管理器。通过 `pacman`，你可以轻松安装、更新、卸载和管理软件包。本文将帮助你了解 `pacman` 命令及其常用选项，提升你在 Linux 系统中管理软件包的效率 📦。
 

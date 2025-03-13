@@ -2,7 +2,7 @@
 description: 高级分区管理
 ---
 
-# Linux parted 命令：高级分区管理
+
 
 ## 1. 简介
 

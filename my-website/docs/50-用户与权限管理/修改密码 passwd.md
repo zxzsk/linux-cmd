@@ -2,7 +2,7 @@
 description: 用户密码管理与安全
 ---
 
-# Linux passwd 命令：用户密码管理与安全
+
 
 ## 1. 简介
 

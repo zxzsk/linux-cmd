@@ -5,7 +5,7 @@ keywords:
   - 网络管理
 ---
 
-# Linux ifconfig 命令教程：查看和配置网络接口 
+
 
 ## 1. 简介
 

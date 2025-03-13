@@ -1,13 +1,12 @@
 ---
 slug: /linux-command-packageManager-dpkg
-description: 使用 dpkg 管理 Debian 系列系统的软件包，并与 apt 命令进行比较
 keywords:
   - Linux
   - 命令行工具
   - 包管理  
 ---
 
-# Linux dpkg 命令：轻松管理软件包
+
 
 `dpkg` 是 Debian 及其衍生版本（如 Ubuntu）中使用的低级软件包管理工具。它用于安装、构建、删除和管理 `.deb` 格式的软件包。虽然 `dpkg` 是强大的包管理工具，但在实际使用中，`apt` 命令（高级包工具）常常作为更高级的工具，简化了包管理的过程。让我们了解一下 `dpkg` 的基本用法，并与 `apt` 命令做个对比，帮助你选择合适的工具吧！🚀
 

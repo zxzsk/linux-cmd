@@ -4,7 +4,6 @@ keywords:
   - Linux命令教程
 ---
 
-# Linux apt 命令：包管理利器 
 
 ## 1. 简介
 

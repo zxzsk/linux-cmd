@@ -3,7 +3,7 @@ slug: /linux-command-packageManager-yum
 description: 适用于 RHEL、CentOS 和 Fedora 系统的软件包管理工具
 ---
 
-# Linux yum ：适用于 RHEL、CentOS 和 Fedora 的包管理工具
+
 
 ## 1. 简介
 

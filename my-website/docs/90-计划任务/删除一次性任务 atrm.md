@@ -3,7 +3,7 @@ keywords:
   - Linux命令教程
 ---
 
-# Linux atrm 命令：删除排定的任务
+
 
 ## 1. 简介
 

@@ -2,7 +2,7 @@
 description: 创建和管理 zip 压缩文件
 ---
 
-# Linux zip 命令：创建和管理 zip 压缩文件 
+
 
 ## 1. 简介
 

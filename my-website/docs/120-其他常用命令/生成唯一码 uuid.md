@@ -7,7 +7,7 @@ keywords:
   - 随机标识符  
 ---
 
-# 使用 uuidgen 生成唯一标识符
+
 
 ## 1. 什么是 `uuidgen`？
 

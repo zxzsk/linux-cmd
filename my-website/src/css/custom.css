@@ -18,7 +18,7 @@
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
+[data-theme="dark"] {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
@@ -27,4 +27,27 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+/* -----------------------------侧边栏配置 */
+/* 使用bordor区分不同文件夹的区域*/
+.theme-doc-sidebar-item-category {
+  border: #1a8870 1px solid;
+  border-radius: 3px;
+}
+
+/* 使用背景色，突出当前阅读的文章 */
+.theme-doc-sidebar-item-link .menu__link--active {
+  background-color: #1a88707f;
+  border-radius: 0;
+}
+
+.menu__list-item-collapsible > .menu__link::before {
+  content: "📂"; /* 目录图标 */
+  margin-right: 8px;
+}
+
+/* 为文章添加图标 */
+.menu__list-item > .menu__link::before {
+  content: "📄"; /* 文章图标 */
+  margin-right: 8px;
 }

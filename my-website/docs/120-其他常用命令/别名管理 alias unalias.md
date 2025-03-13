@@ -3,7 +3,7 @@ keywords:
   - Linux命令教程
 ---
 
-# Linux alias 命令：创建和管理命令别名 
+
 
 ## 1. 简介
 

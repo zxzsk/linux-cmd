@@ -5,7 +5,7 @@ keywords:
   - 用户组
 ---
 
-# Linux chgrp 命令：更改文件所属组
+
 
 ## 1. 简介
 

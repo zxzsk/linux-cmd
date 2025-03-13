@@ -3,7 +3,7 @@ keywords:
   - Linux命令教程
 ---
 
-# Linux bzip2 命令：高效压缩和解压缩文件 
+
 
 ## 1. 简介
 

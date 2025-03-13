@@ -3,7 +3,7 @@ slug: /linux-command-packageManager-rpm
 description: 学习如何使用 rpm 管理软件包
 ---
 
-# Linux rpm 命令：管理 RPM 包 
+
 
 ## 1. 简介
 

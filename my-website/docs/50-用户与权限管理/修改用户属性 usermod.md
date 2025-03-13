@@ -2,7 +2,7 @@
 description: 修改用户账户设置
 ---
 
-# Linux usermod 命令：修改用户账户设置
+
 
 ## 1. 简介
 

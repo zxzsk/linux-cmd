@@ -7,7 +7,7 @@ keywords:
   - 包管理器
 ---
 
-# Linux apt-cache 命令：管理包缓存 
+
 
 ## 1. 简介
 

@@ -8,7 +8,7 @@ keywords:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Linux command-not-found 命令教程：快速解决未找到命令的问题 🔍
+
 
 在Linux中，你可能会遇到命令行提示"command not found"的情况，这通常意味着系统没有安装该命令。别担心，`command-not-found` 命令可以帮你快速找到解决方案！它能自动为你推荐安装所需的软件包，从而解决这个问题。🎉
 

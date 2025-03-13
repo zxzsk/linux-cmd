@@ -4,7 +4,7 @@ keywords:
   - Linux命令教程
 ---
 
-# Linux chattr 命令教程：提高文件安全性的实用技巧 🔒💡
+
 
 ## 1. 简介
 

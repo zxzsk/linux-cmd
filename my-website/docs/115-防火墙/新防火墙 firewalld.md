@@ -1,6 +1,6 @@
 
 
-# Linux `firewalld` 命令教程 🔥
+
 
 `firewalld` 是 Linux 系统中用于管理防火墙的工具，基于区域和服务进行控制，提供动态的管理方式。与传统的 `iptables` 不同，`firewalld` 更加灵活和简便，支持即时应用配置而不需要重启防火墙。
 
