@@ -1,87 +1,218 @@
 <?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="rss.xsl"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
-        <title>My Site Blog</title>
+        <title>在线知识库 Blog</title>
         <link>https://linux-cmd.zxzsk.com/blog</link>
-        <description>My Site Blog</description>
-        <lastBuildDate>Thu, 26 Aug 2021 00:00:00 GMT</lastBuildDate>
+        <description>在线知识库 Blog</description>
+        <lastBuildDate>Sat, 15 Mar 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-Hans</language>
         <item>
-            <title><![CDATA[Welcome]]></title>
-            <link>https://linux-cmd.zxzsk.com/blog/welcome</link>
-            <guid>https://linux-cmd.zxzsk.com/blog/welcome</guid>
-            <pubDate>Thu, 26 Aug 2021 00:00:00 GMT</pubDate>
-            <description><![CDATA[Docusaurus blogging features are powered by the blog plugin.]]></description>
-            <content:encoded><![CDATA[<p><a href="https://docusaurus.io/docs/blog" target="_blank" rel="noopener noreferrer">Docusaurus blogging features</a> are powered by the <a href="https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog" target="_blank" rel="noopener noreferrer">blog plugin</a>.</p>
-<p>Here are a few tips you might find useful.</p>
-<p>Simply add Markdown files (or folders) to the <code>blog</code> directory.</p>
-<p>Regular blog authors can be added to <code>authors.yml</code>.</p>
-<p>The blog post date can be extracted from filenames, such as:</p>
+            <title><![CDATA[已收录命令统计]]></title>
+            <link>https://linux-cmd.zxzsk.com/blog/2025/03/15/已收录命令统计</link>
+            <guid>https://linux-cmd.zxzsk.com/blog/2025/03/15/已收录命令统计</guid>
+            <pubDate>Sat, 15 Mar 2025 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token comment" style="color:#999988;font-style:italic">#数量统计</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">/mnt/d/网站开发/linux-cmd/my-website main ⇡2 </span><span class="token operator" style="color:#393A34">!</span><span class="token number" style="color:#36acaa">185</span><span class="token plain"> ?4 ❯ tree docs </span><span class="token operator" style="color:#393A34">|</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">grep</span><span class="token plain"> .md </span><span class="token operator" style="color:#393A34">|</span><span class="token function" style="color:#d73a49">wc</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token number" style="color:#36acaa">144</span><span class="token plain">     </span><span class="token number" style="color:#36acaa">453</span><span class="token plain">    </span><span class="token number" style="color:#36acaa">4683</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic">#详情    </span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">/mnt/d/网站开发/linux-cmd/my-website main ⇡2 </span><span class="token operator" style="color:#393A34">!</span><span class="token number" style="color:#36acaa">185</span><span class="token plain"> ?4 ❯ tree docs </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">docs</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">└── 02-command</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ├── </span><span class="token number" style="color:#36acaa">10</span><span class="token plain">-包管理器</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── </span><span class="token number" style="color:#36acaa">10</span><span class="token plain">-apt.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── </span><span class="token number" style="color:#36acaa">11</span><span class="token plain">-apt-get.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── </span><span class="token number" style="color:#36acaa">12</span><span class="token plain">-apt-cache.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── </span><span class="token number" style="color:#36acaa">13</span><span class="token plain">-dpkg.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── </span><span class="token number" style="color:#36acaa">14</span><span class="token plain">-snap.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── </span><span class="token number" style="color:#36acaa">20</span><span class="token plain">-dnf.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── </span><span class="token number" style="color:#36acaa">21</span><span class="token plain">-yum.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── </span><span class="token number" style="color:#36acaa">22</span><span class="token plain">-rpm.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── </span><span class="token number" style="color:#36acaa">23</span><span class="token plain">-pacman.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── </span><span class="token number" style="color:#36acaa">99</span><span class="token plain">-appimage.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── </span><span class="token number" style="color:#36acaa">99</span><span class="token plain">-flatpak.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   └── _category_.json</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ├── </span><span class="token number" style="color:#36acaa">20</span><span class="token plain">-文件管理</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── 查看、查找、比较</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   │   ├── _category_.json</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   │   ├── cd.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   │   ├── cmp.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   │   ├── diff.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   │   ├── du.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   │   ├── file.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   │   ├── find.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   │   ├── locate.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   │   ├── ls.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   │   ├── pwd.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   │   ├── stat.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   │   └── tree.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── 创建、删除</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   │   ├── _category_.json</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   │   ├── rmdir.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   │   ├── rm.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   │   └── touch.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── 权限</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   │   ├── _category_.json</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   │   ├── chattr.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   │   └── chmod.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── 移动、复制、链接</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   │   ├── _category_.json</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   │   ├── cp.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   │   ├── dd.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   │   ├── ln.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   │   ├── mkdir.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   │   └── mv.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── 重命名</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   │   ├── _category_.json</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   │   └── rename.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   └── _category_.json</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ├── </span><span class="token number" style="color:#36acaa">25</span><span class="token plain">-文本处理</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── awk.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── _category_.json</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── cat.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── cut.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── echo.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── grep.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── head.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── less.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── more.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── sed.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── sort.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── tail.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── tr.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── uniq.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   └── wc.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ├── </span><span class="token number" style="color:#36acaa">30</span><span class="token plain">-与用户相关</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── _category_.json</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── chage.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── chgrp.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── chown.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── chsh.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── groupadd.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── groupdel.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── groups.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── passwd.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── sudo.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── su.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── useradd.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── userdel.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   └── usermod.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ├── </span><span class="token number" style="color:#36acaa">40</span><span class="token plain">-系统管理相关</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── bg.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── _category_.json</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── dmesg.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── fg.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── free.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── glances.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── htop.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── iotop.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── jobs.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── journalctl.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── killall.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── kill.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── neofetch.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── nice.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── pgrep.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── tail-f.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── top.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── uname.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── uptime.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── whoami.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   └── w-uptime.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ├── </span><span class="token number" style="color:#36acaa">50</span><span class="token plain">-网络</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── 常用网络工具.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── _category_.json</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── curl.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── dig.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── ftp.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── ifconfig.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── iftop.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── ip.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── netstat.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── nmap.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── ping.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── rsync.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── scp.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── ssh.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── ss.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── telnet.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── traceroute.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   └── wget.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ├── </span><span class="token number" style="color:#36acaa">60</span><span class="token plain">-文件系统</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── badblocks.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── blkid.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── _category_.json</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── df.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── fdisk.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── fsck.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── lsblk.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── mdadm-fault-correcting.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── mdadm-fault-correcting-practice.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── mdadm.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── mkfs.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── mount.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── parted.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── pkill.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── ps.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── tune2fs.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── umask.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   └── umount.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ├── </span><span class="token number" style="color:#36acaa">70</span><span class="token plain">-压缩和解压缩</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── bunzip2.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── bzip2.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── _category_.json</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── gunzip.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── gzip.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── tar.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── unzip.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   └── zip.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ├── </span><span class="token number" style="color:#36acaa">80</span><span class="token plain">-定时任务</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── at.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── atq.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── atrm.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── _category_.json</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── cron.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   └── crontab.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ├── </span><span class="token number" style="color:#36acaa">90</span><span class="token plain">-防火墙</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── _category_.json</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── firewalld.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── gpg.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── iptables.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── nftables.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── openssl.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   └── ufw.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ├── </span><span class="token number" style="color:#36acaa">99</span><span class="token plain">-更多</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── alias.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── bc.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── cal.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── _category_.json</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── command-not-found.mdx</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── date.mdx</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── ffmpeg.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── ncal.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── tee.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── tmux.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   ├── uuid.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │   └── watch.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    └── index.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token number" style="color:#36acaa">17</span><span class="token plain"> directories, </span><span class="token number" style="color:#36acaa">160</span><span class="token plain"> files</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>]]></content:encoded>
+            <category>linux</category>
+            <category>命令行</category>
+        </item>
+        <item>
+            <title><![CDATA[Linux命令的重要性]]></title>
+            <link>https://linux-cmd.zxzsk.com/blog/2025/03/14/Linux命令的重要性</link>
+            <guid>https://linux-cmd.zxzsk.com/blog/2025/03/14/Linux命令的重要性</guid>
+            <pubDate>Fri, 14 Mar 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[举个例子吧：远程桌面]]></description>
+            <content:encoded><![CDATA[<blockquote>
+<p>举个例子吧：远程桌面</p>
 <ul>
-<li><code>2019-05-30-welcome.md</code></li>
-<li><code>2019-05-30-welcome/index.md</code></li>
+<li>GUI 远程桌面：需要远程和本地同时安装桌面环境，需要一定的网络带宽支持，需要消耗更多服务器资源，许多小服务器 1C1G、2C2G 的服务器根本就跑不了。</li>
+<li>CLI SSH：对服务器和网络的消耗的接近0，反应更快，几乎不用考虑网络带宽和延迟。关键还便捷，电脑、手机、平板任何设备都可以运行 SSH 客户端。</li>
 </ul>
-<p>A blog post folder can be convenient to co-locate blog post images:</p>
-<p><img decoding="async" loading="lazy" alt="Docusaurus Plushie" src="https://linux-cmd.zxzsk.com/assets/images/docusaurus-plushie-banner-a60f7593abca1e3eef26a9afa244e4fb.jpeg" width="1500" height="500" class="img_ev3q"></p>
-<p>The blog supports tags as well!</p>
-<p><strong>And if you don't want a blog</strong>: just delete this directory, and use <code>blog: false</code> in your Docusaurus config.</p>]]></content:encoded>
-            <category>Facebook</category>
-            <category>Hello</category>
-            <category>Docusaurus</category>
+</blockquote>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-为什么-linux-命令重要"><strong>1. 为什么 Linux 命令重要？</strong><a href="https://linux-cmd.zxzsk.com/blog/2025/03/14/Linux%E5%91%BD%E4%BB%A4%E7%9A%84%E9%87%8D%E8%A6%81%E6%80%A7#1-%E4%B8%BA%E4%BB%80%E4%B9%88-linux-%E5%91%BD%E4%BB%A4%E9%87%8D%E8%A6%81" class="hash-link" aria-label="1-为什么-linux-命令重要的直接链接" title="1-为什么-linux-命令重要的直接链接">​</a></h3>
+<ul>
+<li><strong>高效灵活</strong>：命令行快速完成复杂任务，支持高度定制。</li>
+<li><strong>自动化</strong>：脚本化任务，提升效率。</li>
+<li><strong>系统管理</strong>：核心工具，用于配置、监控和维护。</li>
+<li><strong>远程管理</strong>：通过 <code>ssh</code> 等工具轻松管理远程服务器。</li>
+<li><strong>开源文化</strong>：丰富工具和社区支持。</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-为什么-linux-离不开命令行"><strong>2. 为什么 Linux 离不开命令行？</strong><a href="https://linux-cmd.zxzsk.com/blog/2025/03/14/Linux%E5%91%BD%E4%BB%A4%E7%9A%84%E9%87%8D%E8%A6%81%E6%80%A7#2-%E4%B8%BA%E4%BB%80%E4%B9%88-linux-%E7%A6%BB%E4%B8%8D%E5%BC%80%E5%91%BD%E4%BB%A4%E8%A1%8C" class="hash-link" aria-label="2-为什么-linux-离不开命令行的直接链接" title="2-为什么-linux-离不开命令行的直接链接">​</a></h3>
+<ul>
+<li><strong>Unix 传统</strong>：继承 Unix 设计哲学，强调工具组合。</li>
+<li><strong>服务器主导</strong>：服务器环境依赖命令行，资源占用低。</li>
+<li><strong>开发者偏好</strong>：工具链以命令行为主，开发效率高。</li>
+<li><strong>强大生态</strong>：丰富工具和可扩展性。</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="3-为什么-linux-桌面生态不完整"><strong>3. 为什么 Linux 桌面生态不完整？</strong><a href="https://linux-cmd.zxzsk.com/blog/2025/03/14/Linux%E5%91%BD%E4%BB%A4%E7%9A%84%E9%87%8D%E8%A6%81%E6%80%A7#3-%E4%B8%BA%E4%BB%80%E4%B9%88-linux-%E6%A1%8C%E9%9D%A2%E7%94%9F%E6%80%81%E4%B8%8D%E5%AE%8C%E6%95%B4" class="hash-link" aria-label="3-为什么-linux-桌面生态不完整的直接链接" title="3-为什么-linux-桌面生态不完整的直接链接">​</a></h3>
+<ul>
+<li><strong>市场份额低</strong>：桌面市场被 Windows 和 macOS 主导，商业支持不足。</li>
+<li><strong>硬件支持</strong>：部分硬件驱动不完善，厂商支持有限。</li>
+<li><strong>碎片化</strong>：多种桌面环境和包管理工具，开发适配复杂。</li>
+<li><strong>软件缺失</strong>：专业软件（如 Adobe、Office）和游戏支持不足。</li>
+<li><strong>用户体验</strong>：界面设计和易用性不如 Windows 和 macOS。</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4-linux-桌面的未来"><strong>4. Linux 桌面的未来</strong><a href="https://linux-cmd.zxzsk.com/blog/2025/03/14/Linux%E5%91%BD%E4%BB%A4%E7%9A%84%E9%87%8D%E8%A6%81%E6%80%A7#4-linux-%E6%A1%8C%E9%9D%A2%E7%9A%84%E6%9C%AA%E6%9D%A5" class="hash-link" aria-label="4-linux-桌面的未来的直接链接" title="4-linux-桌面的未来的直接链接">​</a></h3>
+<ul>
+<li><strong>技术进步</strong>：Wayland、Flatpak/Snap 改善兼容性和易用性。</li>
+<li><strong>游戏生态</strong>：Proton 和 Steam Deck 推动 Linux 游戏发展。</li>
+<li><strong>社区推动</strong>：开发者和社区持续改进桌面体验。</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="总结"><strong>总结</strong><a href="https://linux-cmd.zxzsk.com/blog/2025/03/14/Linux%E5%91%BD%E4%BB%A4%E7%9A%84%E9%87%8D%E8%A6%81%E6%80%A7#%E6%80%BB%E7%BB%93" class="hash-link" aria-label="总结的直接链接" title="总结的直接链接">​</a></h3>
+<ul>
+<li><strong>命令行</strong>是 Linux 的核心，高效且强大，适合开发和管理。</li>
+<li><strong>桌面生态</strong>虽不完善，但在开源和定制性上有优势，未来可期。</li>
+</ul>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[MDX Blog Post]]></title>
-            <link>https://linux-cmd.zxzsk.com/blog/mdx-blog-post</link>
-            <guid>https://linux-cmd.zxzsk.com/blog/mdx-blog-post</guid>
-            <pubDate>Sun, 01 Aug 2021 00:00:00 GMT</pubDate>
-            <description><![CDATA[Blog posts support Docusaurus Markdown features, such as MDX.]]></description>
-            <content:encoded><![CDATA[<p>Blog posts support <a href="https://docusaurus.io/docs/markdown-features" target="_blank" rel="noopener noreferrer">Docusaurus Markdown features</a>, such as <a href="https://mdxjs.com/" target="_blank" rel="noopener noreferrer">MDX</a>.</p>
-<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>提示</div><div class="admonitionContent_BuS1"><p>Use the power of React to create interactive blog posts.</p></div></div>
-<!-- -->
-<p>For example, use JSX to create an interactive button:</p>
-<div class="language-js codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-js codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain">button onClick</span><span class="token operator" style="color:#393A34">=</span><span class="token punctuation" style="color:#393A34">{</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token arrow operator" style="color:#393A34">=&gt;</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">alert</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">'button clicked!'</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">}</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token maybe-class-name">Click</span><span class="token plain"> me</span><span class="token operator" style="color:#393A34">!</span><span class="token operator" style="color:#393A34">&lt;</span><span class="token operator" style="color:#393A34">/</span><span class="token plain">button</span><span class="token operator" style="color:#393A34">&gt;</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<button>Click me!</button>]]></content:encoded>
-            <category>Docusaurus</category>
+            <title><![CDATA[常用命令分类]]></title>
+            <link>https://linux-cmd.zxzsk.com/blog/2025/03/14/常用命令分类</link>
+            <guid>https://linux-cmd.zxzsk.com/blog/2025/03/14/常用命令分类</guid>
+            <pubDate>Fri, 14 Mar 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Linux命令分类]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="linux命令分类">Linux命令分类<a href="https://linux-cmd.zxzsk.com/blog/2025/03/14/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E5%88%86%E7%B1%BB#linux%E5%91%BD%E4%BB%A4%E5%88%86%E7%B1%BB" class="hash-link" aria-label="Linux命令分类的直接链接" title="Linux命令分类的直接链接">​</a></h2>
+<p>Linux命令可以根据其功能和用途进行详细分类，以下是一些常见的分类及其对应的命令示例：</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-文件与目录操作">1. 文件与目录操作<a href="https://linux-cmd.zxzsk.com/blog/2025/03/14/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E5%88%86%E7%B1%BB#1-%E6%96%87%E4%BB%B6%E4%B8%8E%E7%9B%AE%E5%BD%95%E6%93%8D%E4%BD%9C" class="hash-link" aria-label="1. 文件与目录操作的直接链接" title="1. 文件与目录操作的直接链接">​</a></h3>
+<ul>
+<li>列出目录内容: <code>ls</code>、<code>tree</code></li>
+<li>切换目录: <code>cd</code></li>
+<li>创建目录: <code>mkdir</code></li>
+<li>删除空目录: <code>rmdir</code></li>
+<li>复制文件或目录: <code>cp</code></li>
+<li>移动或重命名文件或目录: <code>mv</code></li>
+<li>删除文件或目录: <code>rm</code></li>
+<li>查看文件内容: <code>cat</code>, <code>more</code>, <code>less</code>, <code>head</code>, <code>tail</code></li>
+<li>查找文件: <code>find</code>, <code>locate</code></li>
+<li>创建链接: <code>ln</code></li>
+<li>更改文件权限: <code>chmod</code></li>
+<li>更改文件所有者: <code>chown</code></li>
+<li>更改文件时间戳: <code>touch</code></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-文本处理">2. 文本处理<a href="https://linux-cmd.zxzsk.com/blog/2025/03/14/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E5%88%86%E7%B1%BB#2-%E6%96%87%E6%9C%AC%E5%A4%84%E7%90%86" class="hash-link" aria-label="2. 文本处理的直接链接" title="2. 文本处理的直接链接">​</a></h3>
+<ul>
+<li>文本搜索: <code>grep</code></li>
+<li>文本排序: <code>sort</code></li>
+<li>文本去重: <code>uniq</code></li>
+<li>文本比较: <code>diff</code>, <code>cmp</code></li>
+<li>文本替换: <code>sed</code></li>
+<li>文本格式化: <code>awk</code></li>
+<li>文本统计: <code>wc</code></li>
+<li>文本编辑: <code>vi</code>, <code>nano</code>, <code>vim</code></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="3-系统信息与监控">3. 系统信息与监控<a href="https://linux-cmd.zxzsk.com/blog/2025/03/14/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E5%88%86%E7%B1%BB#3-%E7%B3%BB%E7%BB%9F%E4%BF%A1%E6%81%AF%E4%B8%8E%E7%9B%91%E6%8E%A7" class="hash-link" aria-label="3. 系统信息与监控的直接链接" title="3. 系统信息与监控的直接链接">​</a></h3>
+<ul>
+<li>查看系统信息: <code>uname</code>, <code>hostname</code></li>
+<li>查看系统资源使用情况: <code>top</code>, <code>htop</code>, <code>free</code>, <code>df</code>, <code>du</code></li>
+<li>查看进程信息: <code>ps</code>, <code>pstree</code>, <code>pgrep</code></li>
+<li>终止进程: <code>kill</code>, <code>pkill</code>, <code>killall</code></li>
+<li>查看系统日志: <code>dmesg</code>, <code>journalctl</code></li>
+<li>查看网络连接: <code>netstat</code>, <code>ss</code></li>
+<li>查看系统运行时间: <code>uptime</code></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4-网络操作">4. 网络操作<a href="https://linux-cmd.zxzsk.com/blog/2025/03/14/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E5%88%86%E7%B1%BB#4-%E7%BD%91%E7%BB%9C%E6%93%8D%E4%BD%9C" class="hash-link" aria-label="4. 网络操作的直接链接" title="4. 网络操作的直接链接">​</a></h3>
+<ul>
+<li>测试网络连接: <code>ping</code></li>
+<li>查看网络接口信息: <code>ifconfig</code>, <code>ip</code></li>
+<li>配置网络接口: <code>ifup</code>, <code>ifdown</code></li>
+<li>查看路由表: <code>route</code>, <code>ip route</code></li>
+<li>网络抓包: <code>tcpdump</code></li>
+<li>下载文件: <code>wget</code>, <code>curl</code></li>
+<li>远程登录: <code>ssh</code></li>
+<li>文件传输: <code>scp</code>, <code>rsync</code>, <code>ftp</code>, <code>sftp</code></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="5-用户与权限管理">5. 用户与权限管理<a href="https://linux-cmd.zxzsk.com/blog/2025/03/14/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E5%88%86%E7%B1%BB#5-%E7%94%A8%E6%88%B7%E4%B8%8E%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86" class="hash-link" aria-label="5. 用户与权限管理的直接链接" title="5. 用户与权限管理的直接链接">​</a></h3>
+<ul>
+<li>创建用户: <code>useradd</code></li>
+<li>删除用户: <code>userdel</code></li>
+<li>修改用户属性: <code>usermod</code></li>
+<li>创建用户组: <code>groupadd</code></li>
+<li>删除用户组: <code>groupdel</code></li>
+<li>修改用户组属性: <code>groupmod</code></li>
+<li>切换用户: <code>su</code>, <code>sudo</code></li>
+<li>修改密码: <code>passwd</code></li>
+<li>查看用户信息: <code>id</code>, <code>who</code>, <code>w</code></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="6-软件包管理">6. 软件包管理<a href="https://linux-cmd.zxzsk.com/blog/2025/03/14/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E5%88%86%E7%B1%BB#6-%E8%BD%AF%E4%BB%B6%E5%8C%85%E7%AE%A1%E7%90%86" class="hash-link" aria-label="6. 软件包管理的直接链接" title="6. 软件包管理的直接链接">​</a></h3>
+<ul>
+<li>Debian/Ubuntu系列:<!-- -->
+<ul>
+<li>安装软件包: <code>apt-get install</code>, <code>apt install</code></li>
+<li>更新软件包列表: <code>apt-get update</code></li>
+<li>升级软件包: <code>apt-get upgrade</code>, <code>apt upgrade</code></li>
+<li>删除软件包: <code>apt-get remove</code>, <code>apt remove</code></li>
+</ul>
+</li>
+<li>RedHat/CentOS系列:<!-- -->
+<ul>
+<li>安装软件包: <code>yum install</code>, <code>dnf install</code></li>
+<li>更新软件包: <code>yum update</code>, <code>dnf update</code></li>
+<li>删除软件包: <code>yum remove</code>, <code>dnf remove</code></li>
+</ul>
+</li>
+<li>通用:<!-- -->
+<ul>
+<li>查询软件包信息: <code>dpkg</code>, <code>rpm</code></li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="7-压缩与解压缩">7. 压缩与解压缩<a href="https://linux-cmd.zxzsk.com/blog/2025/03/14/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E5%88%86%E7%B1%BB#7-%E5%8E%8B%E7%BC%A9%E4%B8%8E%E8%A7%A3%E5%8E%8B%E7%BC%A9" class="hash-link" aria-label="7. 压缩与解压缩的直接链接" title="7. 压缩与解压缩的直接链接">​</a></h3>
+<ul>
+<li>压缩文件或目录: <code>tar</code>, <code>gzip</code>, <code>bzip2</code>, <code>zip</code></li>
+<li>解压缩文件或目录: <code>tar</code>, <code>gunzip</code>, <code>bunzip2</code>, <code>unzip</code></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="8-磁盘管理">8. 磁盘管理<a href="https://linux-cmd.zxzsk.com/blog/2025/03/14/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E5%88%86%E7%B1%BB#8-%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86" class="hash-link" aria-label="8. 磁盘管理的直接链接" title="8. 磁盘管理的直接链接">​</a></h3>
+<ul>
+<li>查看磁盘使用情况: <code>df</code>, <code>du</code></li>
+<li>磁盘分区: <code>fdisk</code>, <code>parted</code></li>
+<li>格式化磁盘: <code>mkfs</code></li>
+<li>挂载文件系统: <code>mount</code></li>
+<li>卸载文件系统: <code>umount</code></li>
+<li>检查磁盘错误: <code>fsck</code></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="9-计划任务">9. 计划任务<a href="https://linux-cmd.zxzsk.com/blog/2025/03/14/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E5%88%86%E7%B1%BB#9-%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1" class="hash-link" aria-label="9. 计划任务的直接链接" title="9. 计划任务的直接链接">​</a></h3>
+<ul>
+<li>一次性任务: <code>at</code></li>
+<li>周期性任务: <code>cron</code>, <code>crontab</code></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="10-环境变量与shell">10. 环境变量与Shell<a href="https://linux-cmd.zxzsk.com/blog/2025/03/14/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E5%88%86%E7%B1%BB#10-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E4%B8%8Eshell" class="hash-link" aria-label="10. 环境变量与Shell的直接链接" title="10. 环境变量与Shell的直接链接">​</a></h3>
+<ul>
+<li>查看环境变量: <code>printenv</code>, <code>env</code></li>
+<li>设置环境变量: <code>export</code></li>
+<li>查看当前Shell: <code>echo $SHELL</code></li>
+<li>切换Shell: <code>chsh</code></li>
+<li>执行脚本: <code>bash</code>, <code>sh</code>, <code>source</code></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="11-系统关机与重启">11. 系统关机与重启<a href="https://linux-cmd.zxzsk.com/blog/2025/03/14/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E5%88%86%E7%B1%BB#11-%E7%B3%BB%E7%BB%9F%E5%85%B3%E6%9C%BA%E4%B8%8E%E9%87%8D%E5%90%AF" class="hash-link" aria-label="11. 系统关机与重启的直接链接" title="11. 系统关机与重启的直接链接">​</a></h3>
+<ul>
+<li>关机: <code>shutdown</code>, <code>halt</code>, <code>poweroff</code></li>
+<li>重启: <code>reboot</code></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="12-其他常用命令">12. 其他常用命令<a href="https://linux-cmd.zxzsk.com/blog/2025/03/14/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E5%88%86%E7%B1%BB#12-%E5%85%B6%E4%BB%96%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4" class="hash-link" aria-label="12. 其他常用命令的直接链接" title="12. 其他常用命令的直接链接">​</a></h3>
+<ul>
+<li>清屏: <code>clear</code></li>
+<li>查看命令帮助: <code>man</code>, <code>info</code>, <code>--help</code></li>
+<li>历史命令: <code>history</code></li>
+<li>别名: <code>alias</code>, <code>unalias</code></li>
+<li>后台运行: <code>&amp;</code>, <code>nohup</code></li>
+<li>任务控制: <code>jobs</code>, <code>fg</code>, <code>bg</code></li>
+</ul>
+<p>这些分类和命令涵盖了Linux系统中大部分常用的操作，掌握这些命令可以帮助你更高效地管理和使用Linux系统。</p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Long Blog Post]]></title>
-            <link>https://linux-cmd.zxzsk.com/blog/long-blog-post</link>
-            <guid>https://linux-cmd.zxzsk.com/blog/long-blog-post</guid>
-            <pubDate>Wed, 29 May 2019 00:00:00 GMT</pubDate>
-            <description><![CDATA[This is the summary of a very long blog post,]]></description>
-            <content:encoded><![CDATA[<p>This is the summary of a very long blog post,</p>
-<p>Use a <code>&lt;!--</code> <code>truncate</code> <code>--&gt;</code> comment to limit blog post size in the list view.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content:encoded>
-            <category>Hello</category>
-            <category>Docusaurus</category>
-        </item>
-        <item>
-            <title><![CDATA[First Blog Post]]></title>
-            <link>https://linux-cmd.zxzsk.com/blog/first-blog-post</link>
-            <guid>https://linux-cmd.zxzsk.com/blog/first-blog-post</guid>
-            <pubDate>Tue, 28 May 2019 00:00:00 GMT</pubDate>
-            <description><![CDATA[Lorem ipsum dolor sit amet...]]></description>
-            <content:encoded><![CDATA[<p>Lorem ipsum dolor sit amet...</p>
-<p>...consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content:encoded>
-            <category>Hola</category>
-            <category>Docusaurus</category>
+            <title><![CDATA[建站初衷]]></title>
+            <link>https://linux-cmd.zxzsk.com/blog/2025/03/13/建站初衷</link>
+            <guid>https://linux-cmd.zxzsk.com/blog/2025/03/13/建站初衷</guid>
+            <pubDate>Thu, 13 Mar 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Linux命令以及命令参数太多，搭建站点，写下备忘录，便于查询。]]></description>
+            <content:encoded><![CDATA[<p>Linux命令以及命令参数太多，搭建站点，写下备忘录，便于查询。</p>]]></content:encoded>
+            <category>linux</category>
+            <category>命令行</category>
         </item>
     </channel>
 </rss>
