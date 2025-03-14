@@ -10,9 +10,9 @@ import { themes as prismThemes } from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   // 网站标题
-  title: 'My Site',
+  title: '在线知识库',
   // 网站标语
-  tagline: 'Dinosaurs are cool',
+  tagline: 'Linux命令备忘录',
   // 网站图标
   favicon: 'img/Shell.svg',
 
@@ -50,6 +50,10 @@ const config = {
         // 文档配置
         docs: {
           sidebarPath: './sidebars.js', // 侧边栏配置文件路径
+          routeBasePath: '/',  // 文档路由
+
+
+
           // 请将此 URL 替换为你的仓库地址。
           // 如果不需要 "编辑此页面" 链接，可以移除此项。
           editUrl:
@@ -74,7 +78,28 @@ const config = {
         // 主题配置
         theme: {
           customCss: './src/css/custom.css', // 自定义 CSS 文件路径
+
         },
+      }),
+    ],
+  ],
+
+
+  themes: [
+    "@docusaurus/theme-live-codeblock",
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+      ({
+        hashed: true,   // 是否对搜索结果进行hash
+        language: ["en", "zh"], // 搜索语言
+        indexDocs: true, // 是否对docs进行索引
+        indexBlog: false, // 是否对blog进行索引
+        indexPages: false, // 是否对pages进行索引
+        docsRouteBasePath: ["/"], // 配置需要搜索的文档路径
+        searchResultLimits: 8, // 限制返回数量 别调太大
+        highlightSearchTermsOnTargetPage: true, // 在文章中高亮关键词
+
       }),
     ],
   ],
@@ -85,20 +110,16 @@ const config = {
     ({
       // 替换为你的项目的社交卡片图片
       image: 'img/docusaurus-social-card.jpg',
+
+
       // 导航栏配置
       navbar: {
-        title: 'My Site', // 导航栏标题
+        title: '主页', // 导航栏标题
         logo: {
           alt: 'My Site Logo', // Logo 的 alt 文本
           src: 'img/logo.svg', // Logo 图片路径
         },
         items: [
-          {
-            type: 'docSidebar', // 文档侧边栏
-            sidebarId: 'tutorialSidebar', // 侧边栏 ID
-            position: 'left', // 位置
-            label: 'Tutorial', // 标签文本
-          },
           { to: '/blog', label: 'Blog', position: 'left' }, // 博客链接
           {
             href: 'https://github.com/zxzsk/linux-cmd/', // 外部链接
@@ -111,15 +132,6 @@ const config = {
       footer: {
         style: 'dark', // 页脚样式
         links: [
-          {
-            title: 'Docs', // 链接组标题
-            items: [
-              {
-                label: 'Tutorial', // 链接标签
-                to: '/docs/intro', // 链接路径
-              },
-            ],
-          },
           {
             title: '我的网站', // 链接组标题
             items: [
@@ -137,10 +149,6 @@ const config = {
             title: 'More', // 链接组标题
             items: [
               {
-                label: 'Blog', // 链接标签
-                to: '/blog', // 链接路径
-              },
-              {
                 label: 'GitHub', // 链接标签
                 href: 'https://github.com/zxzsk/linux-cmd/', // 外部链接
               },
@@ -152,10 +160,11 @@ const config = {
       },
       // 代码高亮配置
       prism: {
-        theme: prismThemes.github,   // 明亮主题：github主题有额外加成
-        darkTheme: prismThemes.dracula,  // 夜间主题：dracula不错
+        theme: prismThemes.github, // 亮色主题
+        darkTheme: prismThemes.dracula, // 暗色主题
         additionalLanguages: ['bash', 'ini'], // 添加语法高亮额外支持的语言
       },
+
     }),
 
   // markdown插件支持
@@ -163,8 +172,11 @@ const config = {
     // 美人鱼
     mermaid: true,
     // 解析器 md | mdx | detect
-    format: 'detect',
+    format: 'mdx',
   },
+
+
+
 
 };
 

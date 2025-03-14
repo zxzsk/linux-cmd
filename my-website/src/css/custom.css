@@ -28,6 +28,7 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
 /* -----------------------------侧边栏配置 */
 /* 使用bordor区分不同文件夹的区域*/
 .theme-doc-sidebar-item-category {
@@ -51,3 +52,79 @@
   content: "📄"; /* 文章图标 */
   margin-right: 8px;
 }
+
+/* 取消目录的 border */
+.theme-doc-sidebar-item-category-level-1 {
+  border: none;
+}
+
+/* 自定义子文档数量样式 */
+.subdoc-count {
+  font-size: 0.8em;
+  color: #666;
+  margin-left: 4px;
+}
+
+
+:root {
+  --search-local-modal-width: 480px;
+  --search-local-highlight-color: #5468ff;
+}
+
+html[data-theme="dark"] {
+  --search-local-highlight-color: #d23669;
+}
+
+
+/* ---------------引用块----------- */
+/* 默认引用块样式 */
+blockquote {
+  padding: 1rem;
+  margin: 1rem 0;
+  border-left: 5px solid var(--ifm-color-primary);
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* 💡🟢 绿色灯泡 - 提示 */
+blockquote:has(strong:contains("tip")) {
+  border-left-color: #4CAF50;
+  background-color: rgba(76, 175, 80, 0.1);
+}
+
+/* ℹ️ 信息 */
+blockquote:has(strong:contains("info")) {
+  border-left-color: #2196F3;
+  background-color: rgba(33, 150, 243, 0.1);
+}
+
+/* ⚠️ 注意 */
+blockquote:has(strong:contains("注意：")) {
+  border-left-color: #FFC107;
+  background-color: rgba(255, 193, 7, 0.1);
+}
+
+/* ❌ 危险 */
+blockquote:has(strong:contains("危险：")) {
+  border-left-color: #F44336;
+  background-color: rgba(244, 67, 54, 0.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+} */

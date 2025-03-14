@@ -1,0 +1,193 @@
+---
+authors: [soulio]
+tags: [linux, 命令行]
+---
+
+```bash
+#数量统计
+/mnt/d/网站开发/linux-cmd/my-website main ⇡2 !185 ?4 ❯ tree docs | grep .md |wc
+    144     453    4683
+
+#详情    
+/mnt/d/网站开发/linux-cmd/my-website main ⇡2 !185 ?4 ❯ tree docs 
+docs
+└── 02-command
+    ├── 10-包管理器
+    │   ├── 10-apt.md
+    │   ├── 11-apt-get.md
+    │   ├── 12-apt-cache.md
+    │   ├── 13-dpkg.md
+    │   ├── 14-snap.md
+    │   ├── 20-dnf.md
+    │   ├── 21-yum.md
+    │   ├── 22-rpm.md
+    │   ├── 23-pacman.md
+    │   ├── 99-appimage.md
+    │   ├── 99-flatpak.md
+    │   └── _category_.json
+    ├── 20-文件管理
+    │   ├── 查看、查找、比较
+    │   │   ├── _category_.json
+    │   │   ├── cd.md
+    │   │   ├── cmp.md
+    │   │   ├── diff.md
+    │   │   ├── du.md
+    │   │   ├── file.md
+    │   │   ├── find.md
+    │   │   ├── locate.md
+    │   │   ├── ls.md
+    │   │   ├── pwd.md
+    │   │   ├── stat.md
+    │   │   └── tree.md
+    │   ├── 创建、删除
+    │   │   ├── _category_.json
+    │   │   ├── rmdir.md
+    │   │   ├── rm.md
+    │   │   └── touch.md
+    │   ├── 权限
+    │   │   ├── _category_.json
+    │   │   ├── chattr.md
+    │   │   └── chmod.md
+    │   ├── 移动、复制、链接
+    │   │   ├── _category_.json
+    │   │   ├── cp.md
+    │   │   ├── dd.md
+    │   │   ├── ln.md
+    │   │   ├── mkdir.md
+    │   │   └── mv.md
+    │   ├── 重命名
+    │   │   ├── _category_.json
+    │   │   └── rename.md
+    │   └── _category_.json
+    ├── 25-文本处理
+    │   ├── awk.md
+    │   ├── _category_.json
+    │   ├── cat.md
+    │   ├── cut.md
+    │   ├── echo.md
+    │   ├── grep.md
+    │   ├── head.md
+    │   ├── less.md
+    │   ├── more.md
+    │   ├── sed.md
+    │   ├── sort.md
+    │   ├── tail.md
+    │   ├── tr.md
+    │   ├── uniq.md
+    │   └── wc.md
+    ├── 30-与用户相关
+    │   ├── _category_.json
+    │   ├── chage.md
+    │   ├── chgrp.md
+    │   ├── chown.md
+    │   ├── chsh.md
+    │   ├── groupadd.md
+    │   ├── groupdel.md
+    │   ├── groups.md
+    │   ├── passwd.md
+    │   ├── sudo.md
+    │   ├── su.md
+    │   ├── useradd.md
+    │   ├── userdel.md
+    │   └── usermod.md
+    ├── 40-系统管理相关
+    │   ├── bg.md
+    │   ├── _category_.json
+    │   ├── dmesg.md
+    │   ├── fg.md
+    │   ├── free.md
+    │   ├── glances.md
+    │   ├── htop.md
+    │   ├── iotop.md
+    │   ├── jobs.md
+    │   ├── journalctl.md
+    │   ├── killall.md
+    │   ├── kill.md
+    │   ├── neofetch.md
+    │   ├── nice.md
+    │   ├── pgrep.md
+    │   ├── tail-f.md
+    │   ├── top.md
+    │   ├── uname.md
+    │   ├── uptime.md
+    │   ├── whoami.md
+    │   └── w-uptime.md
+    ├── 50-网络
+    │   ├── 常用网络工具.md
+    │   ├── _category_.json
+    │   ├── curl.md
+    │   ├── dig.md
+    │   ├── ftp.md
+    │   ├── ifconfig.md
+    │   ├── iftop.md
+    │   ├── ip.md
+    │   ├── netstat.md
+    │   ├── nmap.md
+    │   ├── ping.md
+    │   ├── rsync.md
+    │   ├── scp.md
+    │   ├── ssh.md
+    │   ├── ss.md
+    │   ├── telnet.md
+    │   ├── traceroute.md
+    │   └── wget.md
+    ├── 60-文件系统
+    │   ├── badblocks.md
+    │   ├── blkid.md
+    │   ├── _category_.json
+    │   ├── df.md
+    │   ├── fdisk.md
+    │   ├── fsck.md
+    │   ├── lsblk.md
+    │   ├── mdadm-fault-correcting.md
+    │   ├── mdadm-fault-correcting-practice.md
+    │   ├── mdadm.md
+    │   ├── mkfs.md
+    │   ├── mount.md
+    │   ├── parted.md
+    │   ├── pkill.md
+    │   ├── ps.md
+    │   ├── tune2fs.md
+    │   ├── umask.md
+    │   └── umount.md
+    ├── 70-压缩和解压缩
+    │   ├── bunzip2.md
+    │   ├── bzip2.md
+    │   ├── _category_.json
+    │   ├── gunzip.md
+    │   ├── gzip.md
+    │   ├── tar.md
+    │   ├── unzip.md
+    │   └── zip.md
+    ├── 80-定时任务
+    │   ├── at.md
+    │   ├── atq.md
+    │   ├── atrm.md
+    │   ├── _category_.json
+    │   ├── cron.md
+    │   └── crontab.md
+    ├── 90-防火墙
+    │   ├── _category_.json
+    │   ├── firewalld.md
+    │   ├── gpg.md
+    │   ├── iptables.md
+    │   ├── nftables.md
+    │   ├── openssl.md
+    │   └── ufw.md
+    ├── 99-更多
+    │   ├── alias.md
+    │   ├── bc.md
+    │   ├── cal.md
+    │   ├── _category_.json
+    │   ├── command-not-found.mdx
+    │   ├── date.mdx
+    │   ├── ffmpeg.md
+    │   ├── ncal.md
+    │   ├── tee.md
+    │   ├── tmux.md
+    │   ├── uuid.md
+    │   └── watch.md
+    └── index.md
+
+17 directories, 160 files
+```
