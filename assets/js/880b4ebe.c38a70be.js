@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[3143],{6320:e=>{e.exports=JSON.parse('{"categoryGeneratedIndex":{"title":"Debian","slug":"/category/debian","permalink":"/category/debian","sidebar":"tutorialSidebar","navigation":{"previous":{"title":"pacman","permalink":"/85de21d2"},"next":{"title":"apt","permalink":"/8a084b12"}}}}')}}]);
