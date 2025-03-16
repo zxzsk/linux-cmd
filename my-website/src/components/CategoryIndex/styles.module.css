@@ -1,0 +1,38 @@
+.container {
+  border-left: 4px solid #8ef30012;
+  padding-left: 10px;
+}
+
+.title {
+  color: #333;
+}
+
+.list {
+  list-style: none;
+  padding-left: 15px;
+}
+
+.item {
+  margin-bottom: 5px;
+}
+
+.link {
+  text-decoration: none;
+  color: #0070f3;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.category {
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #333;
+}
+
+.categoryOpen {
+  color: #0070f3;
+}

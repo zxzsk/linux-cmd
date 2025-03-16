@@ -39,7 +39,7 @@
 /* 使用背景色，突出当前阅读的文章 */
 .theme-doc-sidebar-item-link .menu__link--active {
   background-color: #1a88707f;
-  border-radius: 3px;
+  border-radius: 0;
 }
 
 .menu__list-item-collapsible > .menu__link::before {
@@ -109,48 +109,3 @@ blockquote:has(strong:contains("危险：")) {
   background-color: rgba(244, 67, 54, 0.1);
 }
 
-/* ------------文内链接(下划线左进左出)-------------- */
-/* 
-cubic-bezier 贝塞尔曲线
-加速效果：第一个和第二个值控制加速，第一个值越大，开始时越慢；第二个值越大，结束时越慢。
-减速效果：第三个和第四个值控制减速。
-*/
-
-.markdown a {
-  position: relative;
-  text-decoration: none;
-  color: #007bff;
-  display: inline-block;
-}
-
-.markdown a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  width: 0;
-  height: 2px;
-  background-color: #007bff;
-  transform-origin: bottom left;
-  transition: width 0.1s ease-out; /* 初始快速到50% */
-}
-
-.markdown a:hover::after {
-  width: 50%;
-  transition: width 0.1s ease-out; /* 鼠标移入时快速到50% */
-}
-
-.markdown a:hover::after {
-  width: 100%;
-  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1); /* 0.5秒内从50%到100% */
-}
-
-.markdown a:not(:hover)::after {
-  width: 50%;
-  transition: width 0.1s ease-out; /* 回到50% 0.1秒 */
-}
-
-.markdown a:not(:hover)::after {
-  width: 0;
-  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1); /* 0.5秒内从50%回到0% */
-}
