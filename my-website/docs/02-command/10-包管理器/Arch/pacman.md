@@ -1,3 +1,6 @@
+---
+slug: /85de21d2
+---
 
 
 Arch/manjaro系统包管理器。

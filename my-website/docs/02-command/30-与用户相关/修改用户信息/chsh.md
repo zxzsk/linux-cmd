@@ -1,3 +1,6 @@
+---
+slug: /b67ed399
+---
 ⭐修改登录Shell
 
 `chsh` 命令用于更改当前用户的登录Shell，它可以帮助你切换不同的Shell环境，如从默认的 Bash 切换到 Zsh 或 Fish。更改登录Shell后，你的系统将使用新的Shell来执行命令。🎉

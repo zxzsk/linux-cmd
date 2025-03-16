@@ -1,3 +1,6 @@
+---
+slug: /8d46ff79
+---
 
 
 跨平台兼容的包管理器
@@ -12,8 +15,14 @@
 
 - **Debian/Ubuntu 系统**：
 
+  https://flatpak.org/setup/Ubuntu
+
   ```bash
+  # 本体
   sudo apt install flatpak
+  
+  # 桌面支持
+  sudo apt install gnome-software-plugin-flatpak
   ```
 
 - **Fedora 系统**：

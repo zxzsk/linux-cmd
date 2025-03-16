@@ -1,5 +1,6 @@
 ---
 sidebar_position: 10
+slug: /7fc38350
 ---
 
 
@@ -34,6 +35,12 @@ sudo snap install vlc
 ```
 
 此命令会自动从 Snap Store 下载并安装 `vlc`。Snap 包会自动处理所有依赖关系，保证你可以顺利运行软件。
+
+从本地安装
+
+```bash
+sudo snap install ./PicList-2.9.8.AppImage --no-sandbox
+```
 
 ### 3.2 查看已安装的软件包
 

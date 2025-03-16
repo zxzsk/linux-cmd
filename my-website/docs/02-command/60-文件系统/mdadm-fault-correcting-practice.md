@@ -1,3 +1,6 @@
+---
+slug: /1af12adf
+---
 ⭐⭐mdadm 故障修改实践
 
 # mdadm 故障修复实践

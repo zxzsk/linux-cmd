@@ -1,3 +1,6 @@
+---
+slug: /77e6e1ae
+---
 
 
 Red Hat、CentOS、Fedora系统的包管理器。

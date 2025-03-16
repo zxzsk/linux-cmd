@@ -104,6 +104,7 @@ const config = {
     ],
   ],
 
+
   // 主题配置
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -172,7 +173,7 @@ const config = {
     // 美人鱼
     mermaid: true,
     // 解析器 md | mdx | detect
-    format: 'mdx',
+    format: 'detect',
   },
 
 

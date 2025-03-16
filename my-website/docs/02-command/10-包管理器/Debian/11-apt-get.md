@@ -1,3 +1,6 @@
+---
+slug: /1e1ec6ca
+---
 
 
 ⭐Debian 系统包管理器，比 apt 旧。
