@@ -39,7 +39,7 @@
 
 /* 使用背景色，突出当前阅读的文章 */
 .theme-doc-sidebar-item-link .menu__link--active {
-  background-color: #bfcbc953;
+  background-color: #20b1b161;
   border-radius: 3px;
 }
 
@@ -48,11 +48,10 @@
   margin-right: 8px;
 } */
 
-/* sidebar 目录链接 */
 .menu__list-item-collapsible > .menu__link {
   font-weight: 400;
-  font-size: 1.2em;
-  color: #a8aaee;
+  font-size: 1.5em;
+  color: #168bafb6;
 }
 
 /* 为文章添加图标 */
@@ -61,17 +60,8 @@
   margin-right: 8px;
 }
 
-/* sidebar 文章链接 */
 .menu__list-item > .menu__link {
-  /* font-size: 1.0em; */
-  /* height: 1.5em; */
-  color: #1282c7;
-}
-
-.menu__list-item >  .menu__link--active {
-  /* font-size: 1.0em; */
-  /* height: 1.5em; */
-  color: #8386f0;
+  color: #168bafb6;
 }
 
 /* 取消目录的 border */
@@ -226,7 +216,7 @@ cubic-bezier 贝塞尔曲线
 /* 链接样式 */
 .theme-doc-toc-desktop a {
   text-decoration: none;
-  color: #1dafdcb6;
+  color: #168bafb6;
   position: relative;
   z-index: 1;
 }
@@ -243,7 +233,7 @@ cubic-bezier 贝塞尔曲线
 /* 链接样式 */
 .theme-doc-toc-desktop a {
   text-decoration: none;
-  color: #0f91b9f7;
+  color: #168bafb6;
   position: relative;
   z-index: 1;
 }
@@ -251,3 +241,14 @@ cubic-bezier 贝塞尔曲线
 .theme-doc-toc-desktop a:hover {
   text-decoration: underline;
 }
+
+
+
+
+
+
+
+
+
+
+

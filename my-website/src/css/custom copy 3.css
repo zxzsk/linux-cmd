@@ -1,4 +1,4 @@
-/* 文章大纲（屏幕右侧）实现树状目录 */
+/* 文件夹、文档图标、a标签动画、引用块 */
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
@@ -39,39 +39,19 @@
 
 /* 使用背景色，突出当前阅读的文章 */
 .theme-doc-sidebar-item-link .menu__link--active {
-  background-color: #bfcbc953;
+  background-color: #1a88707f;
   border-radius: 3px;
 }
 
-/* .menu__list-item-collapsible > .menu__link::before {
-  content: "📂";
+.menu__list-item-collapsible > .menu__link::before {
+  content: "📂"; /* 目录图标 */
   margin-right: 8px;
-} */
-
-/* sidebar 目录链接 */
-.menu__list-item-collapsible > .menu__link {
-  font-weight: 400;
-  font-size: 1.2em;
-  color: #a8aaee;
 }
 
 /* 为文章添加图标 */
 .menu__list-item > .menu__link::before {
   content: "📄"; /* 文章图标 */
   margin-right: 8px;
-}
-
-/* sidebar 文章链接 */
-.menu__list-item > .menu__link {
-  /* font-size: 1.0em; */
-  /* height: 1.5em; */
-  color: #1282c7;
-}
-
-.menu__list-item >  .menu__link--active {
-  /* font-size: 1.0em; */
-  /* height: 1.5em; */
-  color: #8386f0;
 }
 
 /* 取消目录的 border */
@@ -176,78 +156,3 @@ cubic-bezier 贝塞尔曲线
   transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1); /* 0.5秒内从50%回到0% */
 }
 
-
-
-/* ---------------文章右侧目录大纲----------- */
-/* 树状结构风格文章右侧目录大纲 - 完整线连接版 */
-.theme-doc-toc-desktop ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  font-family: monospace;
-  position: relative;
-}
-
-/* 为每个目录项预留左侧空间 */
-.theme-doc-toc-desktop li {
-  position: relative;
-  padding-left: 1.8em;  /* 增大留白以放置连接线 */
-  margin-bottom: 0.4em;
-}
-
-/* 主干：绘制完整的竖直连接线 */
-.theme-doc-toc-desktop li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 1px;
-  background: #ccc;
-}
-
-/* 支干：绘制从主干到文字之间的水平连接线 */
-.theme-doc-toc-desktop li::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.8em;  /* 根据文本行高微调 */
-  width: 0.8em;  /* 支干长度 */
-  height: 1px;
-  background: #ccc;
-}
-
-/* 对最后一个目录项，缩短竖直连接线，只绘制到支干位置 */
-.theme-doc-toc-desktop li:last-child::before {
-  height: 0.8em;
-  bottom: auto;
-}
-
-/* 链接样式 */
-.theme-doc-toc-desktop a {
-  text-decoration: none;
-  color: #1dafdcb6;
-  position: relative;
-  z-index: 1;
-}
-
-.theme-doc-toc-desktop a:hover {
-  text-decoration: underline;
-}
-
-/* 移除目录外层可能出现的左侧边框 */
-.table-of-contents {
-  border-left: none;
-}
-
-/* 链接样式 */
-.theme-doc-toc-desktop a {
-  text-decoration: none;
-  color: #0f91b9f7;
-  position: relative;
-  z-index: 1;
-}
-
-.theme-doc-toc-desktop a:hover {
-  text-decoration: underline;
-}
