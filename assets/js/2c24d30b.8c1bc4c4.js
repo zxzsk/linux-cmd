@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[3481],{1821:e=>{e.exports=JSON.parse('{"categoryGeneratedIndex":{"title":"Red Hat","slug":"/category/red-hat","permalink":"/category/red-hat","sidebar":"\u5305\u7ba1\u7406\u5668","navigation":{"previous":{"title":"apt","permalink":"/8a084b12"},"next":{"title":"dnf","permalink":"/6864fae2"}}}}')}}]);
