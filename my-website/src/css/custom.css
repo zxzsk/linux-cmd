@@ -186,6 +186,7 @@ cubic-bezier 贝塞尔曲线
   padding: 0;
   font-family: monospace;
   position: relative;
+  font-weight: 900;
 }
 
 /* 为每个目录项预留左侧空间 */
@@ -250,4 +251,13 @@ cubic-bezier 贝塞尔曲线
 
 .theme-doc-toc-desktop a:hover {
   text-decoration: underline;
+}
+
+/* -----------文章二级标题和三级标题突出显示------------- */
+
+
+/* 二级标题样式 */
+.markdown h2 {
+
+  border-bottom: 1px rgb(155, 156, 155) solid;
 }

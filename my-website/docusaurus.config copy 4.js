@@ -1,3 +1,4 @@
+// 自动生成导航蓝
 import fs from 'fs';
 import path from 'path';
 import { themes as prismThemes } from 'prism-react-renderer'; // 修改这一行
@@ -9,7 +10,7 @@ const docDirs = fs.readdirSync(docsDir).filter(file => fs.statSync(path.join(doc
 // 去除目录名称中的数字编号
 const formatDirName = (dir) => dir.replace(/^\d+-/, '');
 
-// 检查并创建 00栏目介绍.md 文件
+// 检查并创建 0.0.md 文件
 docDirs.forEach(dir => {
   const docPath = path.join(docsDir, dir, '00栏目介绍.md');
   if (!fs.existsSync(docPath)) {
@@ -17,33 +18,12 @@ docDirs.forEach(dir => {
   }
 });
 
-// 遍历目录获取第一个文件的 slug
-const getFirstSlug = (dir) => {
-  const dirPath = path.join(docsDir, dir);
-  const files = fs.readdirSync(dirPath).filter(file => file.endsWith('.md'));
-  
-  for (const file of files) {
-    const filePath = path.join(dirPath, file);
-    const content = fs.readFileSync(filePath, 'utf8');
-    const slugMatch = content.match(/slug:\s*\/([a-f0-9]+)/);
-    if (slugMatch) {
-      return slugMatch[1];
-    }
-  }
-  return null;
-};
-
 // 动态生成导航栏项目
-const navbarItems = docDirs.map(dir => {
-  const slug = getFirstSlug(dir);
-  return {
-    to: slug ? `/${slug}` : `/${formatDirName(dir)}/00栏目介绍`,
-    label: formatDirName(dir).charAt(0).toUpperCase() + formatDirName(dir).slice(1),
-    position: 'left',
-  };
-});
-
-// ...existing code...
+const navbarItems = docDirs.map(dir => ({
+  to: `/${formatDirName(dir)}/00栏目介绍`, // 确保链接指向正确的目录
+  label: formatDirName(dir).charAt(0).toUpperCase() + formatDirName(dir).slice(1),
+  position: 'left',
+}));
 
 // 添加其他固定的导航栏项目
 navbarItems.push(

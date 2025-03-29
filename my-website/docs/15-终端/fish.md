@@ -1,120 +1,110 @@
 ---
 slug: /2b00637e
 ---
-`fish`（Friendly Interactive SHell）是一个现代化的、用户友好的命令行 shell，旨在提供更好的用户体验和更直观的交互。它是 `bash`、`zsh` 等传统 shell 的替代品，具有语法高亮、自动建议、更友好的脚本语法等特性。选择 fish 的唯一原因是“开箱即用”。
+`fish`（Friendly Interactive SHell）是一个开箱即用的、现代化的、用户友好的的命令行 shell，旨在提供更好的用户体验和更直观的交互。它是 `bash`、`zsh` 等传统 shell 的替代品，具有语法高亮、自动建议、更友好的脚本语法等特性。
 
 https://fishshell.com/
 
 
 
+## **Fish Shell 基础命令与使用**  
 
-## 安装 `fish`
-在大多数 Linux 发行版和 macOS 上，可以通过包管理器安装 `fish`。
+---
 
-- **Debian/Ubuntu**:
+### **1. 安装 Fish**  
+**Ubuntu/Debian**:  
+
+```bash  
+sudo apt install fish  
+```
+**macOS (Homebrew)**:  
+```bash  
+brew install fish  
+```
+
+---
+
+### **2. 设为默认 Shell**  
+```bash  
+# 查看 fish 路径  
+which fish  
+
+# 修改默认 Shell（需路径，如 /usr/bin/fish）  
+chsh -s /usr/bin/fish  
+```
+**注**: 重启终端生效。
+
+---
+
+### **3. 基础操作**  
+| 功能         | 命令                           |
+| ------------ | ------------------------------ |
+| **自动补全** | 输入命令后按 `Tab`             |
+| **历史搜索** | 输入关键词后按 `↑` 或 `Ctrl+R` |
+| **语法高亮** | 默认启用，错误命令显示红色     |
+
+---
+
+### **4. 配置 Fish**  
+- **配置文件**: `~/.config/fish/config.fish`  
+- **示例配置**:  
+  ```bash  
+  # 设置别名  
+  alias ll "ls -lh"  
   
-  ```bash
-  sudo apt install fish
+  # 环境变量  
+  set -x PATH $PATH ~/my-tools  
+  
+  # 主题（需安装工具）  
+  fish_config theme choose "Dracula"  
   ```
   
-- **Fedora**:
-  ```bash
-  sudo dnf install fish
-  ```
+  [oh-my-fish](https://github.com/oh-my-fish/oh-my-fish/blob/master/docs/Themes.md)
 
-- **macOS** (使用 Homebrew):
-  ```bash
-  brew install fish
-  ```
+---
 
-- **Arch Linux**:
-  ```bash
-  sudo pacman -S fish
-  ```
-
-
-## 启动 `fish`
-安装完成后，可以通过以下命令启动 `fish`：
-```bash
-fish
-```
-
-## 将 `fish` 设为默认 shell
-如果你想将 `fish` 设为默认 shell，可以使用以下命令：
-```bash
-chsh -s $(which fish)
-```
-注意：在某些系统上，`fish` 可能不在 `/etc/shells` 中，需要手动添加。
-
-## `fish` 的主要特性
-1. **语法高亮**：
+### **5. 插件管理（fisher）**  
+1. **安装 fisher**:  
    
-   - 输入命令时，`fish` 会自动高亮显示有效的命令、路径和选项，帮助你快速发现错误。
-   
-2. **自动建议**：
-   - 输入命令时，`fish` 会根据历史记录和当前目录内容提供自动建议，按 `→` 或 `Tab` 可以接受建议。
+   ```bash  
+   curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher  
+   ```
+2. **常用插件**:  
+   ```bash  
+   fisher install edc/bass         # 兼容 Bash 命令  
+   fisher install jethrokuan/z     # 目录快速跳转  
+   ```
 
-3. **更友好的脚本语法**：
-   
-   - `fish` 的脚本语法更简洁直观，例如：
-     
-     ```fish
-     for i in (seq 1 10)
-       echo "Number $i"
-     end
-     ```
-     
-     坏处是大多数.sh 脚本都是 bash 格式，不能直接用 fish 执行。
-   
-4. **内置帮助**：
-   
-   - 使用 `help` 命令可以打开 `fish` 的交互式帮助文档。
-   
-5. **更智能的命令补全**：
-   - `fish` 提供了更强大的命令补全功能，支持命令、参数和文件路径的补全。
+---
 
-## 常用命令
-- **设置环境变量**：
-  ```fish
-  set -x MY_VAR "value"
+### **6. 与 Bash 的差异**  
+- **变量赋值**: `set var "value"`（非 `VAR=value`）  
+- **条件语句**:  
+  ```bash  
+  if grep "key" file.txt  
+    echo "Found"  
+  end  
+  ```
+- **函数定义**:  
+  ```bash  
+  function hello  
+    echo "Hello $argv"  
+  end  
   ```
 
-- **查看环境变量**：
-  ```fish
-  echo $MY_VAR
+---
+
+### **常见问题**  
+- **脚本兼容性**: 使用 `bash -c "command"` 执行 Bash 命令。  
+- **恢复默认 Shell**:  
+  ```bash  
+  chsh -s /bin/bash  
   ```
 
-- **编辑 `fish` 配置**：
-  ```fish
-  fish_config
-  ```
-  这会打开一个网页界面，用于配置 `fish` 的外观和行为。
+---
 
-- **查看历史记录**：
-  ```fish
-  history
-  ```
+按需调整配置或插件，提升终端体验。
 
-- **退出 `fish`**：
-  ```fish
-  exit
-  ```
 
-## 自定义配置
-`fish` 的配置文件位于 `~/.config/fish/config.fish`，你可以在这里添加自定义配置。例如：
-```fish
-# 设置别名
-alias ll="ls -la"
 
-# 设置环境变量
-set -x PATH $PATH ~/my_custom_path
-```
-
-## 与其他 shell 的区别
-- `fish` 的脚本语法与 `bash` 不同，例如：
-  - `fish` 使用 `and` 和 `or` 代替 `&&` 和 `||`。
-  - `fish` 的变量不需要 `$` 符号来引用。
-  - `fish` 的循环和条件语句更简洁。
-
-## 总结
-`fish` 是一个非常适合交互式使用的 shell，特别适合那些希望提高命令行效率的用户。如果你对传统 shell 的复杂语法感到困扰，`fish` 是一个值得尝试的替代品。
+参考：https://www.cnblogs.com/aaroncoding/p/17118251.html

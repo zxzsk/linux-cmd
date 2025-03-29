@@ -1,41 +1,37 @@
-# Website
+## 静态网站
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+网站使用 [Docusaurus](https://docusaurus.io/) 构建。
 
-### Installation
+### 安装
 
-```
-$ yarn
-```
-
-### Local Development
+克隆项目，进入目录，运行npm命令。
 
 ```
-$ yarn start
+$ npm install
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
+### 预览
 
 ```
-$ yarn build
+$ npm start
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+本地 3000 端口访问预览。
 
-### Deployment
-
-Using SSH:
+### 构建
 
 ```
-$ USE_SSH=true yarn deploy
+$ npm run build
 ```
 
-Not using SSH:
+生成网站源文件。
+
+## 插件
+
+### 永久链接
+
+运行脚本自动完成：为每篇文章生成长度为 8 位数的slug，用以固定文章URL。
 
 ```
-$ GIT_USER=<Your GitHub username> yarn deploy
+node scripts/generateSlug.js
 ```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
